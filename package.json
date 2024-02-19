@@ -1,10 +1,17 @@
 {
   "devDependencies": {
-    "cypress": "^13.6.4"
+    "cypress": "^13.6.4",
+    "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "scripts": {
     "start": "node_modules/.bin/cypress open",
     "test": "node_modules/.bin/cypress run"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/results-json/report.json"
+    }
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.1",

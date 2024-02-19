@@ -14,7 +14,7 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   defaultCommandTimeout: 6000,
   env: {
-    url: "https://rahulshettyacademy.com",
+    url: "https://enterprise.qc.artbnk.com/",
   },
   retries: {
     runMode: 1,
